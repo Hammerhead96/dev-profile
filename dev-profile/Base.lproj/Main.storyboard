@@ -84,14 +84,14 @@
                             <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-gn-OYP">
                                 <rect key="frame" x="32" y="502.5" width="311" height="139.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-4y-zhn">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-4y-zhn">
                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="139.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="rGh-mg-nKu"/>
                                             <constraint firstAttribute="width" secondItem="Itd-4y-zhn" secondAttribute="height" multiplier="1:1" id="wsQ-2j-QMP"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="0Ol-eZ-qeB">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="0Ol-eZ-qeB">
                                         <rect key="frame" x="171.5" y="0.0" width="139.5" height="139.5"/>
                                     </imageView>
                                 </subviews>
@@ -111,12 +111,24 @@
                             <constraint firstItem="d7M-SN-jeh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qmq-QB-MXr"/>
                             <constraint firstItem="0gB-iL-NhX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XIs-Pb-3gv"/>
                             <constraint firstItem="Thn-gn-OYP" firstAttribute="top" secondItem="oki-Gc-STN" secondAttribute="bottom" constant="32" id="Xnu-vg-fAR"/>
+                            <constraint firstItem="iw0-Wa-AUM" firstAttribute="centerY" secondItem="ytC-Bf-PN2" secondAttribute="centerY" constant="15" id="aS8-2t-yE1"/>
                             <constraint firstItem="oki-Gc-STN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bWg-rg-eGC"/>
                             <constraint firstItem="Thn-gn-OYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="jNm-I0-bgM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iw0-Wa-AUM" secondAttribute="trailing" symbolic="YES" id="qCo-lG-hWg"/>
                             <constraint firstItem="ytC-Bf-PN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yoY-IR-qza"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aS8-2t-yE1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="HJP-9S-PXC"/>
+                                <include reference="aS8-2t-yE1"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,9 +137,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Code" width="500" height="250"/>
         <image name="Data Image" width="500" height="250"/>
         <image name="Devslopes BG - June 2017-1920x1080" width="1920" height="1080"/>
         <image name="Images Image" width="500" height="250"/>
+        <image name="Videos Image" width="500" height="250"/>
         <image name="cameraButton" width="57" height="57"/>
         <image name="devslopesProfileLogo" width="191" height="191"/>
         <image name="favoriteButton" width="58" height="57"/>
